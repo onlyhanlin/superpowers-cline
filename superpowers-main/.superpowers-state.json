@@ -1,0 +1,14 @@
+{
+  "pipeline": {
+    "stage": "brainstorming",
+    "stages": {
+      "brainstorming": { "status": "pending", "gate": "user approved design" },
+      "git-worktrees": { "status": "pending", "gate": "worktree created OR user skipped" },
+      "writing-plans": { "status": "pending", "gate": "user approved plan" },
+      "executing-plans": { "status": "pending", "gate": "all tasks done, all tests pass" },
+      "finishing": { "status": "pending", "gate": "branch resolved" }
+    }
+  },
+  "active_task": null,
+  "description": ""
+}
